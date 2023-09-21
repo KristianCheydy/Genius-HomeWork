@@ -1,11 +1,36 @@
+@font-face {
+  font-display: swap; 
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/roboto-v30-latin-regular.woff2') format('woff2'); 
+}
+@font-face {
+  font-display: swap; 
+  font-family: 'Play';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/play-v19-latin-regular.woff2') format('woff2'); 
+}
+
+@font-face {
+  font-display: swap; 
+  font-family: 'Play';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/play-v19-latin-700.woff2') format('woff2'); 
+}
+
 :root {
   --color-primary-white: #ffffff;
+  --color-primary-black: #000;
   --color-primary-lightblue: #2b7fff;
   --color-primary-darkblue: #011c44;
   --color-secondary-gray: #4a4a4a;
   --color-secondary-lightgray: #747272;
   --color-secondary-darkblue: #011f4a;
   --color-secondary-yellow: #ffd02b;
+  
 }
 /* global */
 body {
@@ -13,20 +38,11 @@ body {
   font-family: 'Roboto', sans-serif;
   font-size: 18px;
   font-weight: 400;
+  line-height: 1.5;
 }
 ul {
   list-style-type: none;
 }
-h1 {
-  font-family: 'Play', sans-serif;
-  font-weight: bold;
-  font-size: 140px;
-  line-height: 1.2;
-}
-h2 {
-  font-family: 'Play', sans-serif;
-}
-
 /* button */
 .button {
   background-color: var(--color-primary-lightblue);
@@ -53,19 +69,27 @@ h2 {
 }
 /* hero */
 .hero-title {
+  font-family: 'Play', sans-serif;
+  font-weight: bold;
+  font-size: 140px;
+  line-height: 1.2;
   color: var(--color-primary-lightblue);
   width: 529px;
 }
-
+.hero-text{
+  font-size: 12px;
+  color: var(--color-secondary-gray);
+}
 /* section title */
-.section-text {
+.section-title {
+  font-family: 'Play', sans-serif;
   font-size: 64px;
   font-weight: 700;
 }
-.section-text .capitalize {
+.section-title .capitalize {
   text-transform: capitalize;
 }
-.section-text .brand {
+.section-title .brand {
   color: var(--color-primary-lightblue);
 }
 /* about us section */
@@ -77,4 +101,75 @@ h2 {
 .about-us-section .brand {
   font-weight: 600;
   text-transform: capitalize;
+}
+
+/* Why us section */
+.why-us-text{
+  color: var(--color-primary-black);
+  line-height: 1.3;
+}
+
+/* Procedures section */
+.procedures-text{
+  font-size: 22px;
+  line-height: 1.1;
+  /* color: var(--color-primary-white); */
+}
+/* Contact section */
+.contact-title{
+  font-size: 22px;
+  font-weight: 600;
+  /* color: var(--color-primary-white); */
+}
+.contact-title .brand{
+  color: var(--color-primary-lightblue);
+}
+.contact-button{
+  background-color: var(--color-primary-lightblue);
+  border: 2px solid var(--color-primary-lightblue);
+  border-radius: 32px;
+  cursor: pointer;
+  color: var(--color-primary-white);
+  padding: 16px 32px;
+  font-size: 18px;
+  font-weight: 600;
+} 
+.contact-button:hover{
+  background-color: transparent;
+  color: var(--color-primary-darkblue);
+}
+.contact-text{
+  color: var(--color-secondary-lightgray);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+.contact-text .underline{
+  text-decoration: underline;
+}
+/* Footer section */
+.link-footer{
+  font-size: 16px;
+  font-weight: 400;
+  text-decoration: none;
+  /* color:var(--color-primary-white) */
+}
+.link-footer:hover{
+  color: var(--color-primary-lightblue);
+  font-weight: 700;
+
+}
+.adress-link{
+  /* color: var(--color-primary-white); */
+  font-size: 16px;
+  font-weight: 300;
+  font-style: normal;
+  text-decoration: none;
+}
+.adress-link:hover{
+  text-decoration: none;
+}
+.adress-copyright{
+  font-size: 13px;
+  color: var(--color-secondary-gray);
 }
