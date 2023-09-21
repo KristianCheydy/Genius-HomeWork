@@ -1,0 +1,80 @@
+:root {
+  --color-primary-white: #ffffff;
+  --color-primary-lightblue: #2b7fff;
+  --color-primary-darkblue: #011c44;
+  --color-secondary-gray: #4a4a4a;
+  --color-secondary-lightgray: #747272;
+  --color-secondary-darkblue: #011f4a;
+  --color-secondary-yellow: #ffd02b;
+}
+/* global */
+body {
+  color: var(--color-primary-darkblue);
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+}
+ul {
+  list-style-type: none;
+}
+h1 {
+  font-family: 'Play', sans-serif;
+  font-weight: bold;
+  font-size: 140px;
+  line-height: 1.2;
+}
+h2 {
+  font-family: 'Play', sans-serif;
+}
+
+/* button */
+.button {
+  background-color: var(--color-primary-lightblue);
+  border: 2px solid var(--color-primary-lightblue);
+  border-radius: 32px;
+  cursor: pointer;
+  color: var(--color-primary-white);
+  padding: 16px 32px;
+  font-size: 18px;
+  font-weight: 600;
+}
+.button:hover {
+  background-color: transparent;
+  color: var(--color-primary-darkblue);
+}
+/* link */
+.link {
+  color: var(--color-primary-darkblue);
+  text-decoration: none;
+}
+.link:hover {
+  color: var(--color-primary-lightblue);
+  font-weight: 700;
+}
+/* hero */
+.hero-title {
+  color: var(--color-primary-lightblue);
+  width: 529px;
+}
+
+/* section title */
+.section-text {
+  font-size: 64px;
+  font-weight: 700;
+}
+.section-text .capitalize {
+  text-transform: capitalize;
+}
+.section-text .brand {
+  color: var(--color-primary-lightblue);
+}
+/* about us section */
+.about-us-section {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 1.7;
+}
+.about-us-section .brand {
+  font-weight: 600;
+  text-transform: capitalize;
+}
